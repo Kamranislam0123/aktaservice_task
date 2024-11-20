@@ -22,40 +22,6 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Learn More
 
-
-Set Up a Next.js Project from GitHub
-If you'd like to set up a Next.js project from a GitHub repository, follow these steps:
-
-Clone the Repository
-Use the git clone command to copy the project repository to your local machine:
-
-bash
-Copy code
-git clone https://github.com/username/repository-name.git
-Replace username with the GitHub username and repository-name with the actual repository name.
-
-Navigate to the Project Folder
-Move into the cloned repository directory:
-
-bash
-Copy code
-cd repository-name
-Install Dependencies
-Run the following command to install all the required dependencies:
-
-bash
-Copy code
-npm install
-Run the Development Server
-Start the development server with the following command:
-
-bash
-Copy code
-npm run dev
-Your Next.js app should now be running at http://localhost:3000.
-
-
-
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
