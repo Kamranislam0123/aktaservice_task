@@ -45,7 +45,7 @@ export default function VerifiedReview() {
                 <h3 className="font-semibold text-center text-xl">{review.title}</h3>
               </CardHeader>
               <CardContent className="space-y-4 text-center">
-                <p className="text-muted-foreground italic">"{review.content}"</p>
+                <p className="text-muted-foreground text-base ">"{review.content}"</p>
                 <div className="space-y-2">
                   <p className="font-medium">{review.author}</p>
                   <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">

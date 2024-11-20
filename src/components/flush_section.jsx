@@ -29,7 +29,7 @@ export default function Flush() {
   return (
     <section className="relative bg-pink-50 py-16 px-4 overflow-hidden">
       {/* Decorative Elements */}
-      <div className="absolute top-4 left-8 text-pink-300">
+      <div className="absolute top-4 left-8 text-pink-300 hidden lg:block">
         <svg
           width="100"
           height="112"
@@ -37,7 +37,7 @@ export default function Flush() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_112_1156)">
+          <g clipPath="url(#clip0_112_1156)">
             <path
               d="M285.172 278.408C266.804 285.976 252.171 300.606 244.602 318.97C237.033 300.606 222.4 285.976 204.032 278.408C222.4 270.841 237.033 256.21 244.602 237.846C252.171 256.21 266.804 270.841 285.172 278.408Z"
               stroke="#FF6D83"
@@ -61,7 +61,8 @@ export default function Flush() {
           </defs>
         </svg>
       </div>
-      <div className="absolute bottom-2 right-4 text-pink-300">
+
+      <div className="absolute bottom-2 right-4 text-pink-300 hidden sm:block">
         <svg
           width="100"
           height="112"
@@ -69,7 +70,7 @@ export default function Flush() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_112_1156)">
+          <g clipPath="url(#clip0_112_1156)">
             <path
               d="M285.172 278.408C266.804 285.976 252.171 300.606 244.602 318.97C237.033 300.606 222.4 285.976 204.032 278.408C222.4 270.841 237.033 256.21 244.602 237.846C252.171 256.21 266.804 270.841 285.172 278.408Z"
               stroke="#FF6D83"
@@ -96,11 +97,11 @@ export default function Flush() {
 
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Get Noticeable Results in Less than 4 Weeks
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Get Noticeable Results in Less <br /> than 4 Weeks
           </h2>
 
-          <p className="text-gray-600 max-w-3xl mx-auto">
+          <p className="text-black max-w-3xl text-base mx-auto">
             Experience natural lashes reach their full growth potential by
             committing to our 3 month treatment, while seeing results early on.
           </p>
@@ -108,7 +109,11 @@ export default function Flush() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {timelineSteps.map((step, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
+            <div
+              key={index}
+              className="flex flex-col items-center text-center animate-bottom-to-top opacity-0 animation-delay"
+              style={{ animationDelay: `${index * 200}ms` }} // Adds a delay for staggered animations
+            >
               <div className="relative mb-4">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-pink-200">
                   <Image

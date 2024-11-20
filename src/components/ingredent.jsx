@@ -26,12 +26,12 @@ export default function Ingredients() {
     <section className="bg-pink-50 py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-5xl md:text-5xl font-bold mb-4">
             Scientifically Proven,
             <br />
             Dermatologically Tested & Safe
           </h2>
-          <p className="text-sm text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base text-black max-w-3xl mx-auto">
             Formulated by dermatologists, this Eyelash Enhancing Serum is a
             powerful serum that targets brittle, short, and sparse lashes
             through its proprietary blend of vitamins, extracts, and peptides
@@ -49,7 +49,7 @@ export default function Ingredients() {
               loop
               muted
               playsInline
-              poster="/placeholder.svg?height=600&width=600"
+              poster=""
             >
               <source
                 src="/1aba6e79c81945f1a5208fe98440390b.HD-1080p-2.5Mbps-29328729.mp4"
@@ -63,8 +63,8 @@ export default function Ingredients() {
           <div className="space-y-8">
             {ingredients.map((ingredient, index) => (
               <div key={index} className="space-y-2">
-                <h3 className="font-semibold text-lg">{ingredient.name}</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <h3 className="font-bold text-2xl">{ingredient.name}</h3>
+                <p className="text-black leading-relaxed">
                   {ingredient.description}
                 </p>
               </div>

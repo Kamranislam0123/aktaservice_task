@@ -25,11 +25,10 @@ export default function MagazineBanner() {
                 <Image
                   src={magazine.logo}
                   alt={`${magazine.name} logo`}
-                  width={120}
-                  height={30}
-                  layout=""
+                  width={300}
+                  height={100}
                   objectFit="cover"
-                  className="h-6 md:h-8 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                  className="h-6 md:h-8 w-auto opacity-90 hover:opacity-100 transition-opacity animate-fade-left"
                 />
               </div>
             ))}

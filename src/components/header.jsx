@@ -33,20 +33,22 @@ function Header() {
     <header className="w-full">
       {/* Top promotional banner */}
       <div className="bg-gradient-to-r from-pink-500 via-blue-500 to-pink-500 bg-[length:200%_200%] animate-gradient-x text-white py-1 px-4 text-center text-sm font-medium">
-        <p className="flex items-center justify-center gap-2 text-xl">
+        <p className="flex items-center justify-center gap-2 text-[1.125rem]  font-bold">
           SAVE UP TO 56% WITH 4 FREE GIFTS
-          <span className="flex gap-1 ml-2">
-            <span className="bg-white  text-black px-1 py-1 flex flex-col rounded">
+          <span className="flex gap-1 py-1 ml-2 items-center">
+            <span className="bg-white text-[0.875rem] text-black px-[8px] py-[2px] flex flex-col rounded">
               {String(timeLeft.hours).padStart(2, "0")}
-              <span className="text-xs">HR</span>
+              <span className="text-[.5rem]">HR</span>
             </span>
-            <span className="bg-white text-black px-1 py-1 flex flex-col rounded">
+            <span className="font-bold text-white">:</span> 
+            <span className="bg-white text-[0.875rem] text-black px-[8px] py-[2px] flex flex-col rounded">
               {String(timeLeft.minutes).padStart(2, "0")}
-              <span className="text-xs">MIN</span>
+              <span className="text-[.5rem]">MIN</span>
             </span>
-            <span className="bg-white text-black px-1 py-1 flex flex-col rounded">
+            <span className="font-bold text-white">:</span>
+            <span className="bg-white text-[0.875rem] text-black px-[8px] py-[2px] flex flex-col rounded">
               {String(timeLeft.seconds).padStart(2, "0")}
-              <span className="text-xs">SEC</span>
+              <span className="text-[.5rem]">SEC</span>
             </span>
           </span>
         </p>
@@ -84,12 +86,12 @@ function Header() {
             </div>
 
             <div className="flex items-center gap-4">
-              <Link href="/account" className="hover:text-pink-500">
+              <Link href="/account" className="">
                 <User className="w-6 h-6" />
               </Link>
-              <Link href="/cart" className="relative hover:text-pink-500">
+              <Link href="/cart" className="relative ">
                 <ShoppingBag className="w-6 h-6" />
-                <span className="absolute -top-2 -right-2 bg-pink-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-black text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
                   0
                 </span>
               </Link>
@@ -100,17 +102,18 @@ function Header() {
 
       {/* Bottom banner */}
       <div className="bg-[#FF6C84] text-white py-2 px-4">
-        <div className="flex items-center justify-center gap-2 text-base font-bold">
-          <div className="flex items-center gap-2">
-            <Truck className="w-5 h-5" />
-            Free Shipping Today
-          </div>
-          <div className="flex items-center gap-2">
-            <Heart className="w-5 h-5" />
-            72,500+ Happy Babes
-          </div>
-        </div>
-      </div>
+  <div className="flex flex-col md:flex-row items-center justify-center gap-2 text-base font-bold">
+    <div className="flex text-[1rem] items-center gap-2">
+      <Truck className="w-5 h-5" />
+      Free Shipping Today
+    </div>
+    <div className="flex text-[1rem] items-center gap-2">
+      <Heart className="w-5 h-5" />
+      72,500+ Happy Babes
+    </div>
+  </div>
+</div>
+
     </header>
   );
 }

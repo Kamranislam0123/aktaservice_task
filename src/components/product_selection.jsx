@@ -87,7 +87,7 @@ export default function ProductSelection() {
               </span>
             )}
             <div className="flex flex-col items-center justify-center text-center">
-              <span className="font-bold text-lg">{pkg.quantity}</span>
+              <span className="font-bold text-xl">{pkg.quantity}</span>
               <span className="text-sm text-gray-600">${pkg.price}/each</span>
             </div>
           </Label>
@@ -97,7 +97,7 @@ export default function ProductSelection() {
       {/* Gifts Section */}
       <div className="space-y-4">
         <div className="text-center">
-          <span className="font-bold">EXCLUSIVE SALE!</span>{" "}
+          <span className="font-bold text-sm">EXCLUSIVE SALE!</span>{" "}
           <span className="text-black text-sm font-light">
             FREE Gifts With Your First Order
           </span>

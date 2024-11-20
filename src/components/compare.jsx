@@ -28,11 +28,11 @@ const features = [
 
 export default function Compare() {
   return (
-    <section className="w-full py-12 bg-[#FFF3E9]">
+    <section className="w-full py-12 bg-[#FFE3CA]">
       <div className="container px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold mb-2">How We Compare</h2>
-          <p className="text-muted-foreground">
+          <h2 className="text-5xl font-bold mb-2">How We Compare</h2>
+          <p className="text-muted-foreground text-base">
             The future of lashes is safer, more affordable and good for you.
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function Compare() {
           <div className="grid grid-cols-4">
             {/* Features Column */}
             <div className="bg-pink-500 text-white">
-              <div className="h-12" /> {/* Spacer for header alignment */}
+              <div className="h-14 invisible " /> 
               {features.map((feature, index) => (
                 <div
                   key={index}
@@ -70,7 +70,7 @@ export default function Compare() {
                 <React.Fragment key={featureIndex}>
                   <div className="flex items-center justify-center p-4 border-b last:border-b-0">
                     {feature.forchics ? (
-                      <Check className="h-5 w-5 text-black" />
+                      <Check className="h-5 w-5 text-green-500" />
                     ) : (
                       <X className="h-5 w-5 text-black" />
                     )}
