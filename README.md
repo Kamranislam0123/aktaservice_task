@@ -1,19 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org) project of aktaservice Interview Task
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-# Next.js Project Setup Guide
+## Next.js Project Setup Guide
 
 Welcome to your new Next.js project! This guide will help you set up and run your project locally.
 
