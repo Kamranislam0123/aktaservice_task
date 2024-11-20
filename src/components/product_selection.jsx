@@ -50,7 +50,7 @@ export default function ProductSelection() {
   const selectedBottleCount = getBottleCount(selectedPackage);
 
   return (
-    <div className="max-w-2xl mx-auto space-y-6">
+    <div className="mx-auto space-y-6">
       {/* Radio Group for Package Selection */}
       <RadioGroup
         value={selectedPackage}
@@ -61,7 +61,7 @@ export default function ProductSelection() {
           <Label
             key={pkg.id}
             htmlFor={pkg.id}
-            className={`relative flex items-center justify-start gap-16 border-2 rounded-lg p-6 cursor-pointer ${
+            className={`relative flex items-center justify-start gap-16 border-2 rounded-lg p-3 cursor-pointer ${
               selectedPackage === pkg.id
                 ? "border-red-500 bg-red-50"
                 : "hover:border-[#F86C84]"
@@ -105,7 +105,7 @@ export default function ProductSelection() {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
   {gifts.map((gift, index) => {
-    // Reverse the locking logic to start from the last card
+   
     const isLocked = index >= getBottleCount(selectedPackage);
 
     // Determine the text to display under the lock icon
