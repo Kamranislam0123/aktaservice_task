@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export default function MagazineBanner() {
   const magazines = [
@@ -6,7 +6,7 @@ export default function MagazineBanner() {
     { name: "GLAMOUR", logo: "/glamour_logo_svg_170x.svg" },
     { name: "BAZAAR", logo: "/harpers_bazaar_logo_svg_170x.svg" },
     { name: "COSMOPOLITAN", logo: "/Comopolitan_Magazine_Logo_1_170x.svg" },
-  ]
+  ];
 
   return (
     <section className="w-full py-8 md:py-12">
@@ -27,6 +27,8 @@ export default function MagazineBanner() {
                   alt={`${magazine.name} logo`}
                   width={120}
                   height={30}
+                  layout=""
+                  objectFit="cover"
                   className="h-6 md:h-8 w-auto opacity-90 hover:opacity-100 transition-opacity"
                 />
               </div>
@@ -35,5 +37,5 @@ export default function MagazineBanner() {
         </div>
       </div>
     </section>
-  )
+  );
 }
