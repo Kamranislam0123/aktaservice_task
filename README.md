@@ -1,24 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org) project of aktaservice Interview Task
 
 ## Getting Started
 
-First, run the development server:
+## Next.js Project Setup Guide
+
+Welcome to your new Next.js project! This guide will help you set up and run your project locally.
+
+## Getting Started
+
+### Clone the Repository
+
+First, clone the repository to your local machine using Git:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone (https://github.com/Kamranislam0123/aktaservice_task.git)
+```
+2.Navigate to the Project Folder
+Move into the cloned repository directory:
+
+```bash
+cd your-repository
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3.Install Dependencies
+Run the following command to install all the required dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+4.Run the Development Server
+Start the development server with the following command:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
