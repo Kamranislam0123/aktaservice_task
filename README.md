@@ -24,7 +24,7 @@ Welcome to your new Next.js project! This guide will help you set up and run you
 First, clone the repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone (https://github.com/Kamranislam0123/aktaservice_task.git)
 ```
 2.Navigate to the Project Folder
 Move into the cloned repository directory:
