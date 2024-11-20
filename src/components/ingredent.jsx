@@ -24,14 +24,14 @@ export default function Ingredients() {
 
   return (
     <section className="bg-pink-50 py-16 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-5xl md:text-5xl font-bold mb-4">
+      <div className="container mx-auto">
+        <div className="text-center mb-12 px-4 sm:px-6 md:px-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mx-auto mb-4">
             Scientifically Proven,
             <br />
             Dermatologically Tested & Safe
           </h2>
-          <p className="text-base text-black max-w-3xl mx-auto">
+          <p className="text-sm sm:text-base text-black max-w-3xl mx-auto">
             Formulated by dermatologists, this Eyelash Enhancing Serum is a
             powerful serum that targets brittle, short, and sparse lashes
             through its proprietary blend of vitamins, extracts, and peptides
