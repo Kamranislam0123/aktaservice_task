@@ -13,12 +13,38 @@ pnpm dev
 # or
 bun dev
 ```
+# Next.js Project Setup Guide
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Welcome to your new Next.js project! This guide will help you set up and run your project locally.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Clone the Repository
+
+First, clone the repository to your local machine using Git:
+
+```bash
+git clone https://github.com/your-username/your-repository.git
+```
+2.Navigate to the Project Folder
+Move into the cloned repository directory:
+
+```bash
+cd your-repository
+```
+
+3.Install Dependencies
+Run the following command to install all the required dependencies:
+```bash
+npm install
+```
+
+4.Run the Development Server
+Start the development server with the following command:
+```bash
+npm run dev
+```
+
 
 ## Learn More
 
